@@ -68,3 +68,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Authentication and Protected Routes
+
+This app implements a complete authentication flow using [Parse Server](https://www.back4app.com/) and protects certain routes to ensure only authenticated users can access them.
+
+- Users can register and log in via Parse.
+- Protected routes (like `/`) are not accessible unless the user is authenticated.
+- Unauthenticated access attempts redirect to `/auth`.
+- Authenticated users cannot visit `/auth` again.
+
+### Protected Route System
+
+Implemented by `ProtectedRoute.js`, this component ensures routing is secured throughout the app. All login/register logic is handled in isolated service files to maintain modularity and maintainability.
+
+---
+
+## 👥 Contributors and Code Review Responsibility
+
+### A - Responsible: **Yitong Luo**
+- Implemented `ProtectedRoute` logic and enforcement
+- Ensured proper usage of protected routes across the app
+
+### A + B - Responsible: **AB**
+- Released and versioned app as `v0.3.0`
+- Validated complete protected route functionality:
+  - Redirection when unauthenticated
+  - Prevention of login/signup access when already logged in
+  - Manual route typing handled correctly
+- Auth services placed in separate `AuthService.js` module
+
+### B - Responsible: **Thomas Mitchell**
+- Built Parse Service integration (`ParseConfig.js`)
+- Developed login/register components using service abstraction
