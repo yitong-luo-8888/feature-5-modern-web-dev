@@ -1,0 +1,86 @@
+/* src/styles.css or src/Components/Auth/AuthForm.css */
+
+.auth-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-container, .dashboard-container {
+  width: 360px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  background: #fff;
+  text-align: center;
+}
+
+.auth-container input,
+.dashboard-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
