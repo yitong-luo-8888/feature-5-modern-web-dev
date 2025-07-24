@@ -3,6 +3,10 @@ import { checkUser, loginUser } from "./AuthService";
 import AuthForm from "./AuthForm";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+// UI and logic for user login
+// Uses loginUser() from AuthService
+// Redirects already-authenticated users away from this page
+// On successful login, redirects to dashboard (MainList)
 
 const AuthLogin = () => {
   const navigate = useNavigate();

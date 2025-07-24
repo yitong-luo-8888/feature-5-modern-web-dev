@@ -2,6 +2,9 @@
 import Parse from "parse";
 import environments from "../environments";
 
+// Initializes Parse with your Back4App credentials
+// This allows interaction with the Parse server for user management, data storage, etc.
+
 Parse.initialize(
   environments.PARSE_APPLICATION_ID,
   environments.PARSE_JAVASCRIPT_KEY

@@ -1,4 +1,8 @@
 // src/index.js
+
+// Entry point of the React app
+// Renders <App /> into the root DOM node defined in public/index.html
+// Also loads global styles and initializes Parse backend service
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";

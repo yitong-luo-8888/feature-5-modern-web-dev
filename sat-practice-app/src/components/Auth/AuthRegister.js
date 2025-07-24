@@ -3,6 +3,10 @@ import { checkUser, createUser } from "./AuthService";
 import AuthForm from "./AuthForm";
 import { useNavigate, Link } from "react-router-dom";
 
+// UI and logic for user registration
+// Calls createUser() from AuthService to register users in Parse
+// Redirects authenticated users away from this page
+// Shows link to login page if user already has an account
 
 const AuthRegister = () => {
   const navigate = useNavigate();

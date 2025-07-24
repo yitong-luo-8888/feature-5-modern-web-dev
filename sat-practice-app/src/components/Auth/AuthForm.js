@@ -1,4 +1,7 @@
 import React from "react";
+// Reusable form component used for both login and registration
+// Receives user object, change handlers, and submit function as props
+// Dynamically renders form fields based on login/register mode
 
 const AuthForm = ({ user, isLogin, onChange, onSubmit }) => {
   return (

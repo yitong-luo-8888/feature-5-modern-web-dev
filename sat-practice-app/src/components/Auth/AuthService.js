@@ -1,5 +1,6 @@
 // src/Components/Auth/AuthService.js
-import Parse from "parse";
+import Parse from "../../parse/ParseConfig";
+
 
 // Register a new user
 export const createUser = async (newUser) => {
